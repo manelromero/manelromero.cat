@@ -21,11 +21,6 @@ p {
 
 a {
   text-decoration: none;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-}
-
-a:hover {
-  border-bottom: 3px solid rgba(0, 0, 0, 1);
 }
 
 .page {
@@ -44,6 +39,15 @@ a:hover {
   color: #fff;
 }
 
+.blue a {
+  color: #fff;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.6);
+}
+
+.blue a:hover {
+  border-bottom: 4px solid rgba(255, 255, 255, 1);
+}
+
 .white {
   background: #fff;
   color: #000;
@@ -51,6 +55,11 @@ a:hover {
 
 .white a {
   color: #000;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.4);
+}
+
+.white a:hover {
+  border-bottom: 4px solid rgba(0, 0, 0, 1);
 }
 
 .purple {
@@ -58,32 +67,8 @@ a:hover {
   color: #fff;
 }
 
-.purple a {
-  text-decoration: none;
-  display: inline-flex;
-}
-
-.multiple {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .email {
   width: 100%;
-}
-
-.icon {
-  height: 60px;
-  opacity: 0.8;
-}
-
-.icon:hover {
-  opacity: 1;
-}
-
-.image-link, .image-link:hover {
-  border: none;
 }
 
 @media only screen and (min-width: 500px) {
@@ -113,10 +98,6 @@ a:hover {
   .page {
     padding: 4rem;
   }
-
-  .icon {
-    height: 80px;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -127,9 +108,5 @@ a:hover {
 
   .page {
     padding: 5rem;
-  }
-
-  .icon {
-    height: 100px;
   }
 }
