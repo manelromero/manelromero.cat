@@ -3,11 +3,7 @@ require 'sinatra/base'
 module Server
   class App < Sinatra::Base
     get '/' do
-      File.read(File.join('public', 'index.html'))
-    end
-
-    get '/test' do
-      'This is a test'
+      send_file File.join('public/index.html')
     end
   end
 end
